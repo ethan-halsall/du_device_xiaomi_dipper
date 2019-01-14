@@ -7,17 +7,13 @@
 # Inherit from sdm845-common
 -include device/xiaomi/sdm845-common/BoardConfigCommon.mk
 
-# Kernel clang
-TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := 8.0.4
-
 DEVICE_PATH := device/xiaomi/dipper
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := dipper
 
 # Kernel
-TARGET_KERNEL_CONFIG := dipper_defconfig
+TARGET_KERNEL_CONFIG := sphinx_defconfig
 
 # NFC
 TARGET_USES_NQ_NFC := true
